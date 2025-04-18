@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTA</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Login Form</h2>
+        <form action="Dashboard.html"  id="login">
+            <input type="text"  id="Username" required placeholder="Username"><br><br>
+            <input type="password"  id="key" required placeholder="Password"><br><br>
+            <button type="submit" class="btn">Submit</button> <br> <br>
+        </form>
+        <a href="Register.html" class="w" >Don't have an account? Register</a><br><br>
+    </div>
+    <script>
+        document.getElementById("login").addEventListener("submit", function(event) {
+            var username = document.getElementById("Username").value;
+            var password = document.getElementById("key").value;
+            if (username !== "ISHIMWE sabri" || password !== "1234@") {
+                alert("Invalid username or password!");
+                event.preventDefault(); 
+            }
+        });
+
+</script>
+</body>
+</html>

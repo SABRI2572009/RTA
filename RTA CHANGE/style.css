@@ -1,0 +1,361 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+    font-family: 'Roboto',sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0066cc;
+    color: white;
+    padding: 18px;
+}
+
+.nav-links{
+  text-decoration: none;
+  color: white;
+  
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    transform-origin: left;
+    background-color: #ffff;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    transition: all 0.3s ease;
+    transform: scaleX(0);
+}
+
+nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    position: relative;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav button{
+    padding: 12px;
+    width: 8.5rem;
+    border-radius: 8px;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+}
+
+nav button:hover{
+    background-color: #0066cc;
+    color: #ffff;
+    outline: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+
+#Toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #Toggle {
+    display: block;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
+
+
+.home {
+  background-image: url(carousel-1.jpg);
+  background-repeat: no-repeat;
+  padding: 60px;
+  height: 94vh;
+  animation: fadeSlideIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.home p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffff;
+  animation: fadeSlideIn 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+.home .search-box {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  animation: fadeSlideIn 2s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+
+.home .search-box input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+
+.home .search-box input:focus {
+  border-color: #0066cc;
+}
+
+
+.search-box button {
+  padding: 10.7px 15px;
+  background-color: #0066cc;
+  color: white;
+  position: relative;
+  left: -4.5px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-box button:hover {
+  background-color: #005bb5;;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+   .head{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  #Courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr)); 
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .course {
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .course p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .course button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .course button:hover {
+    background-color: #004b99; 
+  }
+  
+
+  .search-input input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-input{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  
+.search-input button {
+    padding: 10.7px 15px;
+    background-color: #0066cc;
+    color: white;
+    position: relative;
+    left: -4.5px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+
+  .footer {
+    background-color: #004b99;
+    padding: 70px 0;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+  }
+  
+  .footer-col h3 {
+    margin-bottom: 15px;
+    color: black;
+
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-links a {
+    display: inline-flex;
+  padding: 8px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-size: 20px;
+  color:white;
+  margin: 0 8px;
+  transition: .5s;
+  position: relative;
+  left: 6px;
+  text-decoration: none;
+  }
+  
+  .social-links a:hover{
+    background-color: #0066cc;
+    color: #1f242d;
+    box-shadow: 0 0 10px #0066cc;
+  }
+
+  .copyright{
+    background-color: #1f242d;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+  }
+  
+  #Services{
+    background-color: rgb(247, 247, 247);
+    padding: 40px;
+  }
+
+  #Services .item{
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+  }
+
+  #Services .item:hover{
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1.5px);
+  }
+  
+  @media (max-width: 768px) {
+  .home {
+    padding: 30px;
+    height: auto; 
+  }
+}

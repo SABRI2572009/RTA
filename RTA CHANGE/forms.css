@@ -1,0 +1,107 @@
+body{
+    background-color: white;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+.wrapper{
+    width: 400px; /* You can adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input{
+    width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #919090;
+      outline-color: #0066cc;
+      border-radius: 6px;
+      box-sizing: border-box;
+
+}
+
+h2{
+    text-align: center;
+    font-family: Arial,sans-serif;
+}
+
+select {
+    padding: 6px;
+    width: 67.8%;
+    right: -7.7%;
+    position: relative;
+}
+
+
+b{
+position: relative;
+right: -7.3%;
+font-weight: lighter;
+}
+
+button{
+    background-color:  #007bff;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    left: -2px;
+}
+
+button:hover{
+    background-color: #004b99;
+}
+
+a{
+    position: relative;
+    right: -12%;
+    font-size: 1.1rem;
+}
+
+.bea{
+ display: inline;
+ left: -32%;
+}
+
+
+.btn{
+    right: -7%; 
+}
+
+strong{
+ right: -7%;
+ position: relative;
+}
+
+.radios{
+    left: -30.7%;
+    position: relative;
+}
+
+.va{
+    left: -70%;
+    position: relative;
+}
+
+.w {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    left: -5px;
+  }
+
+  .w:hover {
+    text-decoration: underline;
+  }
